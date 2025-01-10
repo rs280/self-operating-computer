@@ -72,7 +72,7 @@ class Config:
                 )
             api_key = os.getenv("GOOGLE_API_KEY")
         genai.configure(api_key=api_key, transport="rest")
-        model = genai.GenerativeModel("gemini-pro-vision")
+        model = genai.GenerativeModel("gemini-2.0-flash-exp")
 
         return model
 
